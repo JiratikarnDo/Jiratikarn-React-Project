@@ -1,15 +1,16 @@
 import './App.css';
-import Login from './components/Login';
-import Register from './components/Register';
+import SignUp from './components/Signup';
+import SignIn from './components/Signin';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/login' element={<Login/>} />
-        <Route exact path='/register' element={<Register/>}/>
+        <Route exact path='/SignIn' element={<SignIn/>} />
+        <Route exact path='/SignUp' element={<SignUp/>}/>
       </Routes>
     </Router>
   );
